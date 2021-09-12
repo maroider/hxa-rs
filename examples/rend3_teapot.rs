@@ -76,13 +76,12 @@ fn create_mesh() -> rend3::types::Mesh {
 
                     cursor += 1;
                     if cursor == indices.len() {
-                        dbg!(cursor - ngon_start);
+                        assert_eq!(cursor - ngon_start, 0);
                         break;
                     }
                     if cursor - ngon_start > 4 {}
                 }
 
-                dbg!(triangulated.len());
                 return mb.with_indices(triangulated).build();
             }
         }
