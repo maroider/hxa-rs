@@ -18,3 +18,8 @@ pollster = "0.2.4"
 rend3 = "0.1.0"
 rend3-pbr = "0.1.0"
 winit = "0.25.0"
+
+[workspace]
+members = [
+    "hxa-conv",
+]
